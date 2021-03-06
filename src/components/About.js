@@ -1,6 +1,18 @@
-import React from 'react'
+import {useEffect} from 'react'
+import {useDispatch} from 'react-redux'
+import {changeNavbarColor} from '../actions/NavbarActions'
 
 const About = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(changeNavbarColor())
+        return () => {
+        dispatch(changeNavbarColor())
+        }
+    }, [])
+
     return (
         <div>
             <h1>Recipe App</h1>

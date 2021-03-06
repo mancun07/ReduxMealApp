@@ -4,13 +4,15 @@ import {Link} from 'react-router-dom'
 import {toggleMenu} from '../actions/NavbarActions'
 
 
+
 const Navbar = () => {
     const menuIsOpened = useSelector(state => state.navbar.menuIsOpened)
+    const basicNavbarColor = useSelector(state => state.navbar.basicNavbarColor)
     const dispatch = useDispatch();
 
     return (
         <>
-        <div className="navbar-wrapper">
+        <div className={`navbar-wrapper ${!basicNavbarColor ? 'transparent' :  ''}`}>
              <div className="navbar container">
                 <div className="sidenav-trigger-wrapper" onClick={() => dispatch(toggleMenu())}>
                     <div className="sidenav-trigger"></div>

@@ -1,5 +1,6 @@
 const initialState = {
-    menuIsOpened: false
+    menuIsOpened: false,
+    basicNavbarColor: true
 }
 
 
@@ -10,6 +11,12 @@ function NavbarReducer(state = initialState, action) {
         return {
           ...state,
           menuIsOpened: !state.menuIsOpened
+        } 
+
+      case 'CHANGE_NAVBAR_COLOR':
+        return {
+          ...state,
+          basicNavbarColor: !state.basicNavbarColor
         } 
     
       default:

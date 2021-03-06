@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import { getMeals } from '../actions/MealActions'
 import { setAlert } from '../actions/AlertActions'
@@ -7,8 +7,13 @@ import { setAlert } from '../actions/AlertActions'
 
 const SearchForm = () => {
     const [food, setFood] = useState('');
-
+    const userInput = useRef('');
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        userInput.current.focus();
+    }, [])
+
 
 
     const onSubmit = (e) => {
@@ -22,10 +27,13 @@ const SearchForm = () => {
     }
 
     return (
-        <form className="search-form my-5" onSubmit={onSubmit}>
-            <input value={food} onChange={e => setFood(e.target.value)} type="text"/>
+        <>
+        <h2 style={{textAlign: 'center'}}>Введите название продукта</h2>
+        <form className="search-form my-3" onSubmit={onSubmit}>
+            <input ref={userInput} value={food} onChange={e => setFood(e.target.value)} type="text"/>
             <button>Отправить</button>
         </form>
+        </>
     )
 }
 

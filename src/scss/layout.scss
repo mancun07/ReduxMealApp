@@ -5,6 +5,10 @@
   // height: 70px;
 }
 
+.navbar-wrapper.transparent {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .navbar {
   display: flex;
   align-items: center;
