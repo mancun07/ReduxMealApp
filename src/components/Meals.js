@@ -11,11 +11,14 @@ const Meals = () => {
     const products = useSelector(state => state.meal.products)
     const dispatch = useDispatch();
 
+    const onClick = () => {
+        dispatch(clearResults())
+    }
 
   
     return (
         <div className="meal-list-wrapper">
-        {products && products.length > 0 && <button className="btn" onClick={() => dispatch(clearResults())} style={style}>Очистить результаты поиска</button>}
+        {products && products.length > 0 && <Button className="btn" text={'Очистить результаты поиска'} onClick={onClick} style={style}/>}
         {!products && <h2>По вашему запросу ничего не найдено. Попробуйте изменить запрос...</h2>}
         <ul className="meals-list">
             {products && products.map(el => {

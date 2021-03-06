@@ -2,11 +2,11 @@
 import { useDispatch } from 'react-redux';
 
 
-const Button = ({text, style}) => {
+const Button = ({text, style, onClick}) => {
     const dispatch = useDispatch();
 
     return (
-        <button className="btn" style={style}>{text}</button>
+        <button className="btn" onClick={onClick} style={style}>{text}</button>
     )
 }
 

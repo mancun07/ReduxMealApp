@@ -9,7 +9,6 @@ const MealsDetails = () => {
     const {id} = useParams();
     const dispatch = useDispatch();
     const current = useSelector(state => state.meal.current)
-    console.log(current)
 
     useEffect(() => {
         dispatch(getSingleMeal(id))
@@ -18,7 +17,7 @@ const MealsDetails = () => {
 
     return (
         <div className="detailed-meal-wrapper my-5">
-            <Link to={'/'}><button className="btn">Назад к результатам поиска</button></Link>
+            <Link to={'/'}><Button className="btn" text={'Назад к результатам поиска'}/></Link>
             {current && (
             <div className="detailed-meal">
                 <h2>{current.strMeal}</h2> 
