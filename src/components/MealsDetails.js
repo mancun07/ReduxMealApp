@@ -5,6 +5,7 @@ import {getSingleMeal} from '../actions/MealActions'
 import Button from './Button'
 import {motion} from 'framer-motion'
 
+
 const MealsDetails = () => {
 
     const {id} = useParams();
@@ -14,6 +15,17 @@ const MealsDetails = () => {
     useEffect(() => {
         dispatch(getSingleMeal(id))
     }, [])
+
+
+    const initCont = {
+        hidden: {opacity: 0},
+        visible: {opacity: 1,
+        transition: {duration: 2, when: "beforeChildren",
+        staggerChildren: 1}
+        }
+    }
+
+
 
 
     return (
@@ -28,10 +40,22 @@ const MealsDetails = () => {
                 transition={{duration: 0.5, type:'spring', stiffness:'150'}}
                 whileHover={{scale:1.05}}
                 />
-                <div className="category my-3">
-                    <span className="category__item btn">{current.strCategory}</span>
-                    <span className="category__item btn">{current.strArea}</span>
-                </div>  
+                <motion.div className="category my-3"
+                variants={initCont}
+                initial="hidden"
+                animate="visible"
+                >
+                    <motion.span className="category__item btn"
+                          variants={initCont}
+                          initial="hidden"
+                          animate="visible"
+                    >{current.strCategory}</motion.span>
+                    <motion.span className="category__item btn"
+                       variants={initCont}
+                       initial="hidden"
+                       animate="visible"
+                    >{current.strArea}</motion.span>
+                </motion.div>  
                 <div className="instructions">
                     <p>{current.strInstructions}</p>
                 </div>

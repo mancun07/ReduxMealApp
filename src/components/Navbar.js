@@ -1,7 +1,7 @@
-
 import {useDispatch, useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {toggleMenu} from '../actions/NavbarActions'
+import {motion} from 'framer-motion'
 
 
 
@@ -9,6 +9,7 @@ const Navbar = () => {
     const menuIsOpened = useSelector(state => state.navbar.menuIsOpened)
     const basicNavbarColor = useSelector(state => state.navbar.basicNavbarColor)
     const dispatch = useDispatch();
+
 
     return (
         <>
