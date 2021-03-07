@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {useSelector, useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import { getMeals } from '../actions/MealActions'
 import { setAlert } from '../actions/AlertActions'
 
