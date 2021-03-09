@@ -1,0 +1,64 @@
+.meal-list-wrapper {
+  text-align: center;
+}
+
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  color: #fff;
+
+  .meal-item {
+    border: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    &__title {
+      position: absolute;
+      margin: 0 5px;
+      color: #fff;
+    }
+  }
+}
+
+.detailed-meal-wrapper {
+  text-align: center;
+}
+
+.detailed-meal {
+  text-align: center;
+  color: $secondaryColor;
+
+  img {
+    max-width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .category {
+    margin: 3rem 0;
+  }
+
+  .category__item {
+    border-radius: 10px;
+    margin: 0 20px;
+  }
+
+  .instructions {
+    text-align: left;
+  }
+}

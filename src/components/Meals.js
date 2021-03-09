@@ -17,12 +17,14 @@ const Meals = () => {
   
     return (
         <div className="meal-list-wrapper">
-        {products && products.length > 0 && <Button className="btn" text={'Очистить результаты поиска'} onClick={onClick} style={style}/>}
-        {!products && <h2>По вашему запросу ничего не найдено. Попробуйте изменить запрос...</h2>}
-        <ul className="meals-list">
-            {products && products.map(el => {
-                return <MealsItem key={el.idMeal} el={el}/>
-            })}
+            {products && products.length > 0 && <Button className="btn" text={'Clear the search result'} onClick={onClick} style={style}/>}
+            {!products && (
+                <h2>No recipes matches to your request. Please, try to change your request...</h2>
+            )}
+            <ul className="meals-list">
+                {products && products.map(el => {
+                    return <MealsItem key={el.idMeal} el={el}/>
+                })}
         </ul>
         </div>
     )

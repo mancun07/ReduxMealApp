@@ -4,7 +4,7 @@ const Loader = () => {
     return (
        <div className="loader">
            <div className="lds-dual-ring"></div>
-           <p>Подождите, идет загрузка данных...</p>
+           <p>Wait, the data are being loaded...</p>
        </div>
     )
 }

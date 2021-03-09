@@ -1,13 +1,11 @@
+@import './scss/variables.scss';
 @import './scss/utilities.scss';
-@import './scss/layout.scss';
-@import './scss/searchform.scss';
-@import './scss/alert.scss';
-@import './scss/loader.scss';
+@import './scss/components/navbar.scss';
+@import './scss/components/searchform.scss';
+@import './scss/components/alert.scss';
+@import './scss/components/loader.scss';
+@import './scss/components/meals.scss';
 @import './scss/media.scss';
 
 
 
-body {
-  background:steelblue;
-  color: #fff;
-}

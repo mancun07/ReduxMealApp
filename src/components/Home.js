@@ -8,7 +8,6 @@ import {useSelector} from 'react-redux'
 const Home = () => {
     const alert = useSelector(state => state.alert.alert)
     const loading = useSelector(state => state.meal.loading)
-    console.log(loading)
 
     return (
         <>

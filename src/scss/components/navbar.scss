@@ -1,0 +1,96 @@
+.navbar-wrapper {
+  background: $primaryColor;
+  color: $secondaryColor;
+  padding: 8px 20px;
+}
+
+.navbar-wrapper.transparent {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    margin: 0;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      margin: 0 20px;
+    }
+  }
+}
+
+.sidenav {
+  transform: translateX(-100vw);
+  height: 0;
+  transition: all 0.5s ease;
+  background: $primaryColor;
+  color: $secondaryColor;
+  margin: 0;
+  padding: 10px;
+
+  .sidenav-item {
+    color: $secondaryColor;
+    margin: 20px 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid $secondaryColor;
+  }
+}
+
+.sidenav.visible {
+  transform: translateX(0);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.sidenav-trigger-wrapper {
+  cursor: pointer;
+  padding: 2px;
+  display: none;
+}
+
+.sidenav-trigger {
+  background: $secondaryColor;
+  width: 30px;
+  height: 2px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: inherit;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 10px;
+  }
+
+  &::after {
+    content: "";
+    background: inherit;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+.no-match {
+  padding-top: 150px;
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+}

@@ -1,13 +1,18 @@
-
+import {motion} from 'framer-motion'
 import {useSelector} from 'react-redux'
+
 
 const Alert = () => {
     const alert = useSelector(state => state.alert.alert)
 
     return (
-        <div className="alert">
+        <motion.div className="alert"
+        initial={{y: '-100vh'}}
+        animate={{y:0}}
+        transition={{duration: 1, type: 'spring'}}
+        >
             <p>{alert}</p>
-        </div>
+        </motion.div>
     )
 }
 
