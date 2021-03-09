@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ReduxMealApp/static/css/main.e4567f6f.chunk.css",
-    "main.js": "/ReduxMealApp/static/js/main.214ed9bd.chunk.js",
-    "main.js.map": "/ReduxMealApp/static/js/main.214ed9bd.chunk.js.map",
+    "main.css": "/ReduxMealApp/static/css/main.7c90f500.chunk.css",
+    "main.js": "/ReduxMealApp/static/js/main.09466606.chunk.js",
+    "main.js.map": "/ReduxMealApp/static/js/main.09466606.chunk.js.map",
     "runtime-main.js": "/ReduxMealApp/static/js/runtime-main.30e1cc5a.js",
     "runtime-main.js.map": "/ReduxMealApp/static/js/runtime-main.30e1cc5a.js.map",
     "static/js/2.f8b59c4f.chunk.js": "/ReduxMealApp/static/js/2.f8b59c4f.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.23757967.chunk.js": "/ReduxMealApp/static/js/3.23757967.chunk.js",
     "static/js/3.23757967.chunk.js.map": "/ReduxMealApp/static/js/3.23757967.chunk.js.map",
     "index.html": "/ReduxMealApp/index.html",
-    "static/css/main.e4567f6f.chunk.css.map": "/ReduxMealApp/static/css/main.e4567f6f.chunk.css.map",
+    "static/css/main.7c90f500.chunk.css.map": "/ReduxMealApp/static/css/main.7c90f500.chunk.css.map",
     "static/js/2.f8b59c4f.chunk.js.LICENSE.txt": "/ReduxMealApp/static/js/2.f8b59c4f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.30e1cc5a.js",
     "static/js/2.f8b59c4f.chunk.js",
-    "static/css/main.e4567f6f.chunk.css",
-    "static/js/main.214ed9bd.chunk.js"
+    "static/css/main.7c90f500.chunk.css",
+    "static/js/main.09466606.chunk.js"
   ]
 }
