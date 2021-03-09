@@ -19,12 +19,14 @@
     border-radius: 50px;
     background: $primaryColor;
     color: $secondaryColor;
-    right: 2px;
-    top: 2px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
     width: 100px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     outline: none;
+    font-size: 16px;
   }
 }
