@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import {useDispatch,useSelector} from 'react-redux'
 import {useParams, Link} from 'react-router-dom'
-import {getSingleMeal} from '../actions/MealActions'
 import Button from './Button'
 import {motion} from 'framer-motion'
+import {getSingleMeal} from '../actions/MealActions'
 
 
 const MealsDetails = () => {
