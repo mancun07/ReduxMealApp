@@ -14,7 +14,7 @@ const MealsItem = ({el}) => {
 }
 
 MealsItem.propTypes = {
-    el: PropTypes.object
+    el: PropTypes.object.isRequired
 }
 
 export default MealsItem

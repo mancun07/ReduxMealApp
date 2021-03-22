@@ -30,7 +30,8 @@ const SearchForm = () => {
         <>
         <h2 style={{textAlign: 'center'}}>Input a product name</h2>
         <form className="search-form my-3" onSubmit={onSubmit}>
-            <input ref={userInput} value={food} onChange={e => setFood(e.target.value)} type="text"/>
+            <input ref={userInput} value={food} onChange={e => 
+                setFood(e.target.value)} type="text"/>
             <button>Submit</button>
         </form>
         </>
