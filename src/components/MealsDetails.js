@@ -14,6 +14,7 @@ const MealsDetails = () => {
 
     useEffect(() => {
         dispatch(getSingleMeal(id))
+           // eslint-disable-next-line
     }, [])
 
 
